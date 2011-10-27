@@ -2,7 +2,7 @@
 PreLoadMe is a leightweight preloader for any webcontent. Powered by jQuery and CSS it is fully responsive and will run on all modern desktop- and mobile browsers with no additionals plugins. PreLoadMe displays a loading animation until the browser fetched the whole webcontent and will fade out the moment the page has been completely chached. Because the simplicity of PreLoadMe, it can be easily customized and adapted to your needs.
 
 ## How it works?
-PreLoadMe needs following Components to work:
+PreLoadMe needs following components to work:
 
 ### jQuery
 You need jQuery to run PreLoadMe. Add this code before the `</body>` tag.
@@ -68,7 +68,7 @@ The source package contains all relevant files and a working demonstration.
 ## Disclaimers
 
 ### Credits
-Please suppert humans.txt (http://humanstxt.org/). It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website.
+Please support humans.txt (http://humanstxt.org/). It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website.
 
 	PreLoadMe: https://github.com/niklausgerber/PreLoadMe
 	Niklaus Gerber
