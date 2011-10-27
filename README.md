@@ -81,4 +81,4 @@ PreLoadMe by Niklaus Gerber is licensed under a Creative Commons Attribution-Sha
 Based on a work at github.com.
 
 ### Download, Fork, Commit.
-If you think you can make this better, please Download, Fork, & Commit. I'd love your see your ideas.
+If you think you can make this better, please Download, Fork, & Commit. I'd love to see your ideas.
