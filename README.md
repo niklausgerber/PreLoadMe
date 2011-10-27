@@ -61,7 +61,7 @@ The outer DIV `preloader` will be called from the CSS file and will cover the en
 The inner DIV `status` will show the loading animation.
 
 ### Image
-The image `status.gif` is will be displayed in the DIV `status` and is located at `/img/status.gif`´.
+The image `status.gif` is will be displayed in the DIV `status` and is located at `/img/status.gif`.
 
 The source package contains all relevant files and a working demonstration.
 
