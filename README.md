@@ -60,6 +60,41 @@ Place following HTML Code directly after the `<body>` tag.
 The outer DIV `preloader` will be called from the CSS file and will cover the entire website with a white DIV.
 The inner DIV `status` will show the loading animation.
 
+### Using with AJAX requests
+If you want to show preloader during AJAX request you can use the following CSS code.
+
+	#preloader {
+		position:fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;		
+		background-color:#fff; /* change if the mask should have another color then white */
+		z-index:99; /* makes sure it stays on top */
+	}		
+
+	#status {
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:50%; /* centers the loading animation horizontally one the screen */
+		top:50%; /* centers the loading animation vertically one the screen */
+		background-image:url(../img/status.gif); /* path to your loading animation */
+		background-repeat:no-repeat;
+		background-position:center;
+		margin:-100px 0 0 -100px; /* is width and height divided by two */
+	}			
+
+Your Javascript code will look like:
+
+	$("#status").fadeIn();
+	$("#preloader").fadeIn();
+	$.get(url, data, function(){
+		$("#status").fadeOut();
+		$("#preloader").fadeOut();
+	});
+
+
 ### Image
 The image `status.gif` is will be displayed in the DIV `status` and is located at `/img/status.gif`.
 
