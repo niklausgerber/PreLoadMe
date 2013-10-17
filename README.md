@@ -17,18 +17,23 @@ Place the following JavaScript code right before the `</body>` tag.
 	<script type="text/javascript">
 		//<![CDATA[
 			$(window).load(function() { // makes sure the whole site is loaded
-				$("#status").fadeOut(); // will first fade out the loading animation
-				$("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+				$('#status').fadeOut(); // will first fade out the loading animation
+				$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+				$('body').delay(350).css({'overflow':'visible'});
 			})
 		//]]>
-	</script>
+	</script> 
 
 ### CSS
 Make sure you include the following CSS code on your website.
 
+	body {
+		overflow: hidden;
+	}
+
 	/* Preloader */
 	#preloader {
-		position:absolute;
+		position: fixed;
 		top:0;
 		left:0;
 		right:0;

@@ -1,8 +1,11 @@
 ﻿@charset "utf-8";
+body {
+	overflow: hidden;
+}
 
 /* Preloader */
 #preloader {
-	position:absolute;
+	position: fixed;
 	top:0;
 	left:0;
 	right:0;
