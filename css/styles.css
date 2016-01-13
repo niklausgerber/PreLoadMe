@@ -10,7 +10,7 @@ body {
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#fff; /* change if the mask should have another color then white */
+	background-color:#fff; /* change if the mask should be a color other than white */
 	z-index:99; /* makes sure it stays on top */
 }
 
@@ -18,8 +18,8 @@ body {
 	width:200px;
 	height:200px;
 	position:absolute;
-	left:50%; /* centers the loading animation horizontally one the screen */
-	top:50%; /* centers the loading animation vertically one the screen */
+	left:50%; /* centers the loading animation horizontally on the screen */
+	top:50%; /* centers the loading animation vertically on the screen */
 	background-image:url(../img/status.gif); /* path to your loading animation */
 	background-repeat:no-repeat;
 	background-position:center;
