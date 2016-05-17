@@ -1,31 +1,29 @@
-# PreLoadMe, a lightweight  jQuery website preloader
-PreLoadMe is a lightweight  preloader for any webcontent. Powered by jQuery and CSS it is fully responsive and will run on all modern desktop- and mobile browsers with no additionals plugins. PreLoadMe displays a loading animation until the browser fetched the whole webcontent and will fade out the moment the page has been completely chached. Because the simplicity of PreLoadMe, it can be easily customized and adapted to your needs.
+# PreLoadMe, a lightweight jQuery website preloader
+PreLoadMe is a lightweight preloader for any webcontent. Powered by jQuery and CSS it is fully responsive and will run on all modern desktop- and mobile browsers with no additionals plugins. PreLoadMe displays a loading animation until the browser fetched the whole webcontent and will fade out the moment the page has been completely chached. Because the simplicity of PreLoadMe, it can be easily customized and adapted to your needs.
 
-## How it works?
-PreLoadMe needs following components to work:
+PreLoadMe displays a loading animation until the browser fetched the whole web content and will fade out the moment the page has been completely cached. Because the simplicity of PreLoadMe, it can be easily customized and adapted to your needs.
 
-### jQuery
-You need jQuery to run PreLoadMe. Add this code before the `</body>` tag.
-	
-	<!-- jQuery Plugin -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+You can read more about it here: <a href='https://www.niklausgerber.com/projects/preloadme-a-lightweight-jquery-website-preloader/' title='Rapid Bootstrap V4' target='_blank'>Rapid Bootstrap V4 by Niklaus Gerber</a><br />
+You can see a live preview here: <a href='http://codepen.io/niklausgerber/pen/MKrVdQ' title='Rapid Bootstrap V4 Live Preview' target='_blank'>Rapid Bootstrap V4 Live Preview</a>
 
-### jQuery Snippet
-Place the following JavaScript code right before the `</body>` tag.
+## Implementation
+PreLoadMe is jQuery driven. You will need to implement an up to date jQuery version and the corresponding JavaScript for executing the preloader. Add the following code right before the `</body>` tag.
 
-	<!-- Preloader -->
-	<script type="text/javascript">
-		//<![CDATA[
-			$(window).load(function() { // makes sure the whole site is loaded
-				$('#status').fadeOut(); // will first fade out the loading animation
-				$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-				$('body').delay(350).css({'overflow':'visible'});
-			})
-		//]]>
-	</script> 
+    <!-- jQuery Plugin -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
 
-### CSS
-Make sure you include the following CSS code on your website.
+    <!-- Preloader -->
+    <script type="text/javascript">
+        //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $('#status').fadeOut(); // will first fade out the loading animation
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+                $('body').delay(350).css({'overflow':'visible'});
+            })
+        //]]>
+    </script>
+
+The CSS-Markup will help you style the preloader. Make sure to include it on your website.
 
 	body {
 		overflow: hidden;
@@ -54,16 +52,14 @@ Make sure you include the following CSS code on your website.
 		margin:-100px 0 0 -100px; /* is width and height divided by two */
 	}
 
-### HTML
-Place following HTML Code directly after the `<body>` tag.
+Finally place the following HTML Code directly after the `<body>` tag.
 
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
 	</div>
 
-The outer DIV `preloader` will be called from the CSS file and will cover the entire website with a white DIV.
-The inner DIV `status` will show the loading animation.
+The outer DIV `preloader` will be called from the CSS file and will cover the entire website with a white DIV. The inner DIV `status` will show the loading animation. Also you should not forget to give your document a proper doctype. Otherwise the preloader might not work.
 
 ### Using with AJAX requests
 If you want to show preloader during AJAX request you can use the following CSS code.
@@ -99,26 +95,10 @@ Your Javascript code will look like:
 		$("#preloader").fadeOut();
 	});
 
-
-### Image
-The image `status.gif` is will be displayed in the DIV `status` and is located at `/img/status.gif`.
-
 The source package contains all relevant files and a working demonstration.
-
-## Disclaimers
-
-### Credits
-Please support humans.txt (http://humanstxt.org/). It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website.
-
-	PreLoadMe: https://github.com/niklausgerber/PreLoadMe
-	Niklaus Gerber
-	Twitter: @niklausgerber
-	URL: www.gerbers.ch
-	Location: Bern, Switzerland
-	
-### Licences
-PreLoadMe by Niklaus Gerber is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
-Based on a work at github.com.
 
 ### Download, Fork, Commit.
 If you think you can make this better, please Download, Fork, & Commit. I'd love to see your ideas.
+
+## Donation
+I love to create and I won't ask for repayment. If you appreciate my work and would like to support me I am sure you will earn some extra Karma points. <a href="https://www.paypal.me/NiklausGerber" target="_blank" title="Please donate">Please donate</a>.
