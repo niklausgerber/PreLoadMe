@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -23,15 +23,15 @@
 <div>This is your website content</div>
 
 <!-- jQuery Plugin -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 <!-- Preloader -->
 <script type="text/javascript">
 	//<![CDATA[
-		$(window).load(function() { // makes sure the whole site is loaded
-			$('#status').fadeOut(); // will first fade out the loading animation
-			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-			$('body').delay(350).css({'overflow':'visible'});
+		$(window).on('load', function() { // makes sure the whole site is loaded 
+			$('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
 		})
 	//]]>
 </script> 
