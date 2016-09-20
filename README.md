@@ -15,11 +15,11 @@ PreLoadMe is jQuery driven. You will need to implement an up to date jQuery vers
     <!-- Preloader -->
     <script type="text/javascript">
         //<![CDATA[
-            $(window).load(function() { // makes sure the whole site is loaded
-                $('#status').fadeOut(); // will first fade out the loading animation
-                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
                 $('body').delay(350).css({'overflow':'visible'});
-            })
+              })
         //]]>
     </script>
 
