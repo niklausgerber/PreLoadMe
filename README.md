@@ -96,6 +96,15 @@ Your Javascript code will look like:
 
 The source package contains all relevant files and a working demonstration.
 
+## Credits
+Please support humans.txt (http://humanstxt.org/). It's an initiative for knowing the people behind a website. It's a TXT file that contains information about the different people who have contributed to building the website.
+
+	PreLoadMe: https://github.com/niklausgerber/PreLoadMe
+	Niklaus Gerber
+	Twitter: @niklausgerber
+	URL: https://www.niklausgerber.com
+	Location: Zürich, Switzerland
+
 ### Download, Fork, Commit.
 If you think you can make this better, please Download, Fork, & Commit. I'd love to see your ideas.
 
